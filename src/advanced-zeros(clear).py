@@ -1,5 +1,5 @@
-number = 71398757
-base = 12
+number = 16#71398757
+base = 16#12
 #должно получиться 35699370
 
 def getZerosCount(number, base):

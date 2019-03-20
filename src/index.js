@@ -33,14 +33,14 @@ module.exports = function getZerosCount(number, base) {
       let count = 0;
       let i = delit;
 
-      while (parseFloat(temp / i) > 1) {
-        count += parseInt(temp  / i);
+      while (temp / i > 1) {
+        count += Math.floor(temp  / i);
         // console.log('c',count,'i = ', i);
         // console.log('delit',delit);
         i *= delit;
       }
-      count = Math.round(parseFloat(count / stepen));
-      return count;
+      count = count / stepen;
+      return parseInt(count);
     }
 
     variants = []
